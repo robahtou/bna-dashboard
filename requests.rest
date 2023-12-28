@@ -1,0 +1,18 @@
+@cognito_access = eyJraWQiOiJXa2xxTXJjMmxxUWhZZFJuRFBGTHVOaVVmcmlrNmVQRVhuYmNLdWxVcVlrPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiI1MmNlNDY0Ny1jNGE2LTQ0NTItOGJlNy1jZGU5YWE2ODk3NDYiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAudXMtd2VzdC0yLmFtYXpvbmF3cy5jb21cL3VzLXdlc3QtMl9MQnRTcTdDNmEiLCJjbGllbnRfaWQiOiI0YzNtZm80OWV0bnRmcm9xdDQzOXRiMDRsOCIsIm9yaWdpbl9qdGkiOiJmNGUzOTRkOC1hMjJmLTRiOTktOTkyMC0xMjNlYjJmOTJjM2EiLCJldmVudF9pZCI6ImQ5YjBhYzIzLWU2OTYtNGRmMy04NTk3LWI2NTJkN2QzYzNjNiIsInRva2VuX3VzZSI6ImFjY2VzcyIsInNjb3BlIjoiYXdzLmNvZ25pdG8uc2lnbmluLnVzZXIuYWRtaW4iLCJhdXRoX3RpbWUiOjE3MDM0NTY0ODUsImV4cCI6MTcwMzcwMDQxNCwiaWF0IjoxNzAzNjk2ODE0LCJqdGkiOiI3NzZmMDI0Yi0xYTdiLTRjNTMtODEzNS0wYmRhMzc3ZjNlZDUiLCJ1c2VybmFtZSI6InJlbXkuZ3JlaW5ob2ZlciJ9.Vrjck3sBe5PUHMNllVKUj1DyJH5RRhhaAjs1yexVw6sesbQU2fxymbuVCRs_8_Qm1y1i1KfPeakAyVXl7WHWAzP-JBv2RC0jxQP3to-4cp68fiOS3Mtmw-OJ3HD-wlMfCLqz57Q4xhU-sCVCnfFS6OV3ris-PjuWdZ_vT0MDDppxpnhhsBhuGrzroTSGl1RYH4iFHmMMmMPVlYk5BbyjhnYhGkWRWwcFro0U5hpyJ1czmC1j1FBI3OEe_T0O4OhPo407tZhspSTM7Z-Foe4-wp47MkjE_wKodeBNhM_B12Ho9NRlLJzGZtnTg66zieoVhreslAuY4t6IN_cPsX_1nw
+
+###
+GET https://api.peopleforbikes.xyz/bnas/results
+content-type: application/json
+Authorization: Bearer {{cognito_access}}
+
+###
+POST https://api.peopleforbikes.xyz/enqueue/city
+content-type: application/json
+Authorization: Bearer {{cognito_access}}
+
+{
+  "city": "santa rosa",
+  "country": "usa",
+  "fips_code": "3570670",
+  "region": "new mexico"
+}
