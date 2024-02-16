@@ -2,13 +2,8 @@ import { type NextRequest } from 'next/server'
 
 export async function POST(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams
-  console.log('searchParams', searchParams)
   const cognito_access = searchParams.get('cognito_access');
-  // console.log('cognito_access', cognito_access)
-  // console.log(request)
   const body = await request.json();
-  console.log('wtf', body)
-
   const metadata = {
     method: "POST",
     headers: {
@@ -19,18 +14,16 @@ export async function POST(request: NextRequest) {
   };
 
   try {
-    const resp = await fetch("https://api.peopleforbikes.xyz/enqueue/city", metadata);
+    const resp = await fetch("https://api.peopleforbikes.xyz/bnas/enqueue", metadata);
 
   if (!resp.ok) {
-    console.log('not ok', resp.body)
     throw new Error("Failed to fetch data: " + JSON.stringify(body));
   }
 
   const data = await resp.json()
+  return Response.json({ data })
   } catch (err) {
     console.log('\nOUCH', err);
   }
 
-  const data = {};
-  return Response.json({ data })
 }
