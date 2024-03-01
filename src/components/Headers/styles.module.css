@@ -1,0 +1,29 @@
+.top-header {
+  max-width: 1440px;
+  width: 100%;
+
+  padding: 22px 30px;
+
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 40px;
+}
+
+.navLeft {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+
+  & a {
+    height: 100%;
+    display: inline-block;
+  }
+}
+
+.icon-logo-bna-dark {
+  height: 46px;
+  width: 209px;
+}

@@ -1,0 +1,23 @@
+.button {
+  padding: 15px 30px;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+
+  font-size: var(--16);
+  font-weight: var(--bold);
+  line-height: normal;
+  color: var(--white);
+
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: var(--cyan);
+}
+
+.button:active {
+  background: #2F88C2;
+  box-shadow: 0px 4px 20px -1px rgba(0, 53, 83, 0.13);
+}
