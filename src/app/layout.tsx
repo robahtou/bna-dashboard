@@ -1,21 +1,25 @@
-'use client';
+import '@Styles/fonts.css';
+import '@Styles/resets.css';
+import '@Styles/base.css';
+import '@Styles/layout.css';
+import '@Styles/theme.css';
 
-import { Amplify } from 'aws-amplify';
-import { Authenticator } from '@aws-amplify/ui-react';
-import '@aws-amplify/ui-react/styles.css';
+import AmplifyAuth from '@Components/AmplifyAuth';
 
-import awsExports from '../aws-exports';
-
-
-Amplify.configure(awsExports, { ssr: true });
 
 function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BNA Dashboard</title>
+        <style>@layer fonts, resets, base, layout, theme;</style>
+      </head>
       <body>
-        <Authenticator.Provider>
+        <AmplifyAuth>
           {children}
-        </Authenticator.Provider>
+        </AmplifyAuth>
       </body>
     </html>
   );

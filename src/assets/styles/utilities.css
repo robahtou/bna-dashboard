@@ -1,0 +1,32 @@
+@layer utilities {
+  /* Spacing */
+  .w-25 {
+    width: 25px;
+  }
+  .h-24 {
+    height: 24px;
+  }
+
+
+  /* Text */
+  .text-12 {
+    font-size: var(--12px);
+  }
+  .text-16 {
+    font-size: var(--16px);
+  }
+
+  .text-deep-navy {
+    color: var(--deep-navy);
+  }
+  .text-white {
+    color: var(--white);
+  }
+
+  .bg-yellow {
+    background-color: var(--yellow);
+  }
+  .bg-cyan {
+    background-color: var(--cyan);
+  }
+}

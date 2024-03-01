@@ -1,0 +1,55 @@
+@layer themes {
+  :root {
+    /* COLORS */
+
+    /* primary */
+    --deep-navy:  #00263eff;
+    --cyan:       #009edbff;
+    --red:        #d71920ff;
+
+    /* secondary */
+    --coal:       #4d4d4fff;
+    --gray:       #8b8a8dff;
+    --white:      #ffffffff;
+
+    /* tertiary */
+    --golden-yellow:     #fadb4aff;
+
+    /* other */
+    --blue-gray: #273B55;
+    --border-gray: #e0e0e0;
+
+    /* HOVER */
+    --hover-cyan: #2f88c2;
+    --hover-golden-eyllow: #f0d140;
+
+    /* BUTTON SHADOW */
+    --btn-shadow: 0px 4px 20px -1px rgba(0, 53, 83, 0.13);
+  }
+
+    /* BUTTONS */
+
+    /* secondary */
+    .btn-secondary {
+      border: 1px solid var(--bna-deep-navy, #00263E);
+      background-color: var(--white);
+    }
+
+    /* donate */
+    .btn-donate {
+      font-family: Montserrat;
+      font-weight: var(--bold);
+      font-size: var(--12px);
+      line-height: var(--lh-14px);
+
+      color: var(--deep-navy);
+      background-color: var(--golden-yellow);
+      text-transform: uppercase;
+    }
+
+  /* LOGO */
+  .svg-logo-bna-light {
+    width: 178px;
+    height: 43px;
+  }
+}
