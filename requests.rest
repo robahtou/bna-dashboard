@@ -1,0 +1,18 @@
+@cognito_access = <INSERT_TOKEN_HERE> 
+
+###
+GET https://api.peopleforbikes.xyz/bnas/results
+content-type: application/json
+Authorization: Bearer {{cognito_access}}
+
+###
+POST https://api.peopleforbikes.xyz/enqueue/city
+content-type: application/json
+Authorization: Bearer {{cognito_access}}
+
+{
+  "city": "santa rosa",
+  "country": "usa",
+  "fips_code": "3570670",
+  "region": "new mexico"
+}

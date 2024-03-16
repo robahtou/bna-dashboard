@@ -1,0 +1,105 @@
+/* #CSS.1 */
+
+:root {
+  --4px: 0.25rem;
+  --8px: 0.5rem;
+  --12px: 0.75rem;
+  --16px: 1rem;
+  --20px: 1.25rem;
+  --24px: 1.5rem;
+  --28px: 1.75rem;
+  --32px: 2rem;
+  --36px: 2.25rem;
+  --40px: 2.5rem;
+  --44px: 2.75rem;
+  --48px: 3rem;
+  --52px: 3.25rem;
+  --56px: 3.5rem;
+  --60px: 3.75rem;
+
+  --thin:         100;
+  --extra-light:  200;
+  --light:        300;
+  --regular:      400;
+  --medium:       500;
+  --semi-bold:    600;
+  --bold:         700;
+  --extra-bold:   800;
+  --black:        900;
+
+  /* letter-spacing */
+  --ls-0_55px:  0.034375rem;
+  --ls-0_625px: 0.0390625rem;
+  --ls-0_7px:   0.04375rem;
+  --ls-0_85px:  0.053125rem;
+  --ls-1px:     0.0625rem;
+  --ls-1_25px:  0.078125rem;
+  --ls-1_5px:   0.09375rem;
+
+  /* line-height */
+  --lh-14px: 0.875rem;
+  --lh-16px: 1rem;
+  --lh-19px: 1.1875rem;
+  --lh-21px: 1.3125rem;
+  --lh-24px: 1.5rem;
+  --lh-26px: 1.625rem;
+  --lh-28px: 1.75rem;
+  --lh-30px: 1.875rem;
+  --lh-36px: 2.25rem;
+  --lh-40px: 2.5rem;
+  --lh-42px: 2.625rem;
+  --lh-48px: 3rem;
+  --lh-60px: 3.75rem;
+  --lh-72px: 4.5rem;
+
+  --fonts-body: Montserrat, 'Open Sans', Helvetica, Arial, sans-serif;
+  --fonts-header-bold: 'Dharma Gothic E ExBold';
+  --fonts-header-light: 'Dharma Gothic E ExLight';
+}
+
+@layer fonts {
+  @font-face {
+    font-family: 'Dharma Gothic E';
+    font-style: normal;
+    font-weight: 700;
+    src:
+      local('Dharma Gothic E Bold'),
+      url('../fonts/DharmaGothicE-Bold.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 800;
+    src:
+      local('Montserrat Extra Bold'),
+      url('../fonts/Montserrat-ExtraBold.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src:
+      local('Montserrat Bold'),
+      url('../fonts/Montserrat-Bold.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src:
+      local('Montserrat Medium'),
+      url('../fonts/Montserrat-Medium.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src:
+      local('Montserrat Regular'),
+      url('../fonts/Montserrat-Regular.otf') format('opentype');
+  }
+}
